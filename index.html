@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    <div class="container" id="register-box">
+        <h2>Register</h2>
+        <input type="text" id="reg-name" placeholder="Enter Name">
+        <input type="email" id="reg-email" placeholder="Enter Email">
+        <input type="password" id="reg-password" placeholder="Enter Password">
+        <input type="password" id="reg-confirm-password" placeholder="Enter Confirm password">
+        <button onclick="registerUser()">Register</button>
+        <p>Already have an account? <a href="#" onclick="showLogin()">Log in</a></p>
+    </div>
+    
+    <div class="container" id="login-box" style="display: none;">
+        <h2>Login</h2>
+        <input type="email" id="login-email" placeholder="Enter Email">
+        <input type="Password" id="login-password" placeholder="Enter Password">
+        <button onclick="loginUser()">Log in</button>
+        <p>Don't have an account? <a href="#" onclick="showRegister()">Register</a></p>
+    </div>
+    <script src="/script.js"></script>
+</body>
+
+</html>
