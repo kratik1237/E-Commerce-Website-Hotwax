@@ -43,7 +43,7 @@ function loginUser(){
     let user=JSON.parse(localStorage.getItem("user"));
     if(user && user.email === email && user.password ===password){
         alert("Login successful!");
-       window.location.href="E:\E-Commerce Hotwax\home.html";
+       window.location.href="/home.html";
     } else{
         alert("Invalid email or password!");
     }
