@@ -1,21 +1,20 @@
-body{
-    
+body {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-top: 100px;
     background-color: rgb(196, 159, 115);
 }
 
-.container{
+.container {
     width: 300px;
     margin: auto;
     padding: 20px;
     background: rgb(51, 107, 124);
     border-radius: 10px;
     box-shadow: 0px 0px 10px rgb(7, 1, 1);
-
 }
-button{
+
+button {
     width: 100%;
     padding: 3px;
     margin-top: 10px;
@@ -24,19 +23,22 @@ button{
     color: rgb(255, 250, 250);
     cursor: pointer;
 }
-input{
+
+input {
     text-decoration: none;
     border-radius: 10px;
-    color:rgb(0, 0, 0);
-    
+    color: rgb(0, 0, 0);
 }
-button:hover{
+
+button:hover {
     background-color: rgb(172, 95, 1);
 }
-p{
+
+p {
     font-size: 14px;
 }
-a{
+
+a {
     width: 100%;
     padding: 4px;
     margin-top: 10px;
@@ -45,12 +47,13 @@ a{
     background-color: rgb(116, 115, 106);
     text-decoration: none;
 }
-a:hover{
+
+a:hover {
     background-color: rgb(172, 95, 1);
 }
 
-
-.products-container {
+/* Additional Styles for Home Page */
+#product-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -59,30 +62,55 @@ a:hover{
 }
 
 .product-card {
-    width: 250px;
-    padding: 15px;
+    background-color: white;
     border: 1px solid #ddd;
-    border-radius: 10px;
-    background: #fff;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 200px;
     text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
 }
 
 .product-card img {
-    width: 100px;
-    height: 100px;
+    max-width: 100%;
+    height: auto;
+}
+
+.product-card h2 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.product-card p {
+    margin: 5px 0;
 }
 
 .product-card button {
-    background: #ff9800;
+    background-color: rgb(116, 115, 106);
     color: white;
     border: none;
-    padding: 10px;
-    margin-top: 10px;
-    cursor: pointer;
+    padding: 5px 10px;
     border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
 }
 
 .product-card button:hover {
-    background: #e68900;
+    background-color: rgb(172, 95, 1);
+}
+
+.search-filter {
+    margin: 20px;
+}
+
+#search-bar {
+    padding: 5px;
+    font-size: 1em;
+    width: 200px;
+    margin-right: 10px;
+}
+
+#category-filter {
+    padding: 5px;
+    font-size: 1em;
 }
